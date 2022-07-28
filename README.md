@@ -6,7 +6,7 @@
 
 ## Summary
 
-Our work in this project can be summaried as follows:
+Our work in this project can be summarised as follows:
 - We highlight the complexity and significance of extracting information from images of scientific plots. 
 - We extensively review published literature by past researchers to understand their conducted work and contribution to the field. 
 - After comparing some published VQA datasets based on chart images, we decided to use the PlotQA dataset. 
