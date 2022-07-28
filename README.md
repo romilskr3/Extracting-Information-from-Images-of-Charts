@@ -1,49 +1,23 @@
-# MCM PRACTICUM
+# Extracting Information from Images of Charts
 
-This is a template for MCM practicums.  Please read these instructions carefully.
+## Research Question
 
-This file is written in
-[markdown](https://guides.github.com/features/mastering-markdown/).  Markdown
-is a suitable format for documents stored in git repositories.
+ _Can existing state-of-the-art object detection algorithms produce efficient results to extract information from images of scientific charts that are arguably different from natural images?_
 
-## Instructions
+## Summary
 
-You *must* do the following:
+Our work in this project can be summaried as follows:
+- We highlight the complexity and significance of extracting information from images of scientific plots. 
+- We extensively review published literature by past researchers to understand their conducted work and contribution to the field. 
+- After comparing some published VQA datasets based on chart images, we decided to use the PlotQA dataset. 
+- Our intricate exploratory analysis of the PlotQA dataset reveals a discrepancy in their ground-truth bounding boxes for chart titles in their images.
+- We propose an execution pipeline to accomplish three tasks that are essential to extract information from images of scientific plots: 
+- - **Classification of chart images by chart type**
+- - **Extraction of chart elements from chart images**
+- - **Extraction of Textual Chart Components embedded in  chart images**.
+- We use modified versions of two object detection models, VGG16 and YOLOv5, at various stages of our pipeline. We also performe experimental analysis based on different subsets (balanced and unbalanced) to observe the effect on the final model’s prediction.
 
-1 - Fork this repo.
+## Repository Overview
 
-2 - There is no need to rename your fork but if you wish to do so please use
-     the format:
-
-     2021-mcm-username
-
-replacing `username` with your School of Computing login name.
-
-For example, if Stephen Blott were to be doing an MCM practicum, he would rename
-his repo as:
-
-     2021-mcm-sblott
-
-
-You should also update the *Project description*.
-
-3 - This directory has two important sub-directories.
-
-- All of your source code should be placed in the `src` sub-directory.
-
-- All of your documentation should be placed in the `docs` sub-directory.
-
-4 - There is further important documentation in the `docs` directory.  Read that next.
-
-When you are have followed all of these instructions and are sure that you
-understand what is expected, you may replace the contents of this file with a
-brief description of your project (two or three paragraphs).
-
-## Additional Resources
-
-- Git [cheat sheet](https://gitlab.computing.dcu.ie/sblott/local-gitlab-documentation/blob/master/cheat-sheet.md)
-- Gitlab [CI environment](https://gitlab.computing.dcu.ie/sblott/docker-ci-environment) and it's [available software](https://gitlab.computing.dcu.ie/sblott/docker-ci-environment/blob/master/Dockerfile)
-- Example projects with CI configured:
-   * [Python](https://gitlab.computing.dcu.ie/sblott/test-project-python)
-   * [Java](https://gitlab.computing.dcu.ie/sblott/test-project-java)
-   * [MySql](https://gitlab.computing.dcu.ie/sblott/test-project-mysql)
+- The code and results for each stage in our proposed pipeline is organised as individual subdirectories in the `src` sub-directory
+- We created explanatory documents to outline the structure of the PlotQA dataset. These documents are present in the `docs/documents` sub-directory
