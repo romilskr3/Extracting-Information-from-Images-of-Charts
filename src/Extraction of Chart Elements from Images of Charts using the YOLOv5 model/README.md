@@ -1,8 +1,8 @@
-## Stage 2: Extraction of Chart Elements from Images of Charts using the YOLOv5 model
+# Stage 2: Extraction of Chart Elements from Images of Charts using the YOLOv5 model
 
 We used a modified version of the pre-trained YOLOv5 model to predict bounding boxes for various chart elements in chart images such as dots for dot plots, lines for line charts, and bars for bar charts.
 
-We wrote a script to fetch the required annotations (bounding box coordinates) of various chart elements of the training set. Since YOLOv5 uses a normalized coordinate system, we had to convert the annotations concerning each image since the images vary in size.
+We wrote a script to fetch the required annotations (bounding box coordinates) of various chart elements for the images in the training set. Since YOLOv5 uses a normalized coordinate system, we had to convert the annotations concerning each image since the images vary in size.
 
 We performed the following experiments while training the model:
 - Used a balanced set consisting equal proportion of images across all chart types.
