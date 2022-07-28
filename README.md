@@ -12,9 +12,9 @@ Our work in this project can be summaried as follows:
 - After comparing some published VQA datasets based on chart images, we decided to use the PlotQA dataset. 
 - Our intricate exploratory analysis of the PlotQA dataset reveals a discrepancy in their ground-truth bounding boxes for chart titles in their images.
 - We propose an execution pipeline to accomplish three tasks that are essential to extract information from images of scientific plots: 
--- **Classification of chart images by chart type**
--- **Extraction of chart elements from chart images**
--- **Extraction of Textual Chart Components embedded in  chart images**.
+    - **Classification of chart images by chart type**
+    - **Extraction of chart elements from chart images**
+    - **Extraction of Textual Chart Components embedded in  chart images**.
 - We use modified versions of two object detection models, VGG16 and YOLOv5, at various stages of our pipeline. We also performe experimental analysis based on different subsets (balanced and unbalanced) to observe the effect on the final model’s prediction.
 
 ## Repository Overview
