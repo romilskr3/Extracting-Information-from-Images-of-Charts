@@ -20,4 +20,4 @@ Our work in this project can be summarised as follows:
 ## Repository Overview
 
 - The code and results for each stage in our proposed pipeline is organised as individual subdirectories in the `src` sub-directory
-- We created explanatory documents to outline the structure of the PlotQA dataset. These documents are present in the `docs/documents` sub-directory
+- We created explanatory documents to outline the structure of the PlotQA dataset. These documents are present in the `docs/documentation` sub-directory
