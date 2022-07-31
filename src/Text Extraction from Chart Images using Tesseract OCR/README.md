@@ -2,8 +2,8 @@
 
 We used a modified version of the pre-trained YOLOv5 model to predict bounding boxes for the following textual chart elements in chart images:
 1. Chart Title
-2. X Axis Label
-3. Y Axis Label
+2. X-Axis Label
+3. Y-Axis Label
 4. Legend Elements
 
 We wrote a script to fetch the required annotations (bounding box coordinates) of above mentioned textual chart elements for the images in the training set. Since YOLOv5 uses a normalized coordinate system, we had to convert the annotations concerning each image since the images vary in size.

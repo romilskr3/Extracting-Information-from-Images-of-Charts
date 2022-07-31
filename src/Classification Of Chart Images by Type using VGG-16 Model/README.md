@@ -10,4 +10,4 @@ We also included some types of charts that were not part of the PlotQA dataset (
 
 Upon examining the performance of both the models (one trained on a balanced subset of images and another on an unbalanced subset) we observed that the model trained on a balanced subset was better in terms of accuracy but by a very narrow margin.
 
-The source Code and results are placed in their respective subdirectories.
+The source code and results are placed in their respective subdirectories.
